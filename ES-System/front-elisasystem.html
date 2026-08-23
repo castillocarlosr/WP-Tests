@@ -1,0 +1,167 @@
+[vc_row row_type="row" type="grid" text_align="left" css_animation="" margin_bottom="40" padding_bottom="25"][vc_column][vc_column_text]
+
+<style>
+.allergen-filter-bar {<br />
+    display: flex;<br />
+    flex-wrap: wrap;<br />
+    gap: 12px;<br />
+    align-items: center;<br />
+    padding: 20px 0;<br />
+    border-bottom: 1px solid #e2e8f0;<br />
+    margin-bottom: 20px;<br />
+}<br />
+.allergen-filter-btn {<br />
+    border: 1px solid #cbd5e1;<br />
+    background: #ffffff;<br />
+    color: #334155;<br />
+    border-radius: 999px;<br />
+    padding: 10px 20px;<br />
+    font-size: 14px;<br />
+    font-weight: 500;<br />
+    cursor: pointer;<br />
+    transition: all .15s ease;<br />
+}<br />
+.allergen-filter-btn:hover {<br />
+    border-color: #0f172a;<br />
+}<br />
+.allergen-filter-btn.active {<br />
+    background: #0f172a;<br />
+    border-color: #0f172a;<br />
+    color: #ffffff;<br />
+}<br />
+.allergen-grid {<br />
+    display: flex;<br />
+    flex-wrap: wrap;<br />
+    margin: 0 -10px;<br />
+    box-sizing: border-box;<br />
+}<br />
+/* Exactly 4 items per row (25% each) on desktop */<br />
+.allergen-card {<br />
+    flex: 0 0 25%;<br />
+    max-width: 22%;<br />
+    box-sizing: border-box;<br />
+    padding: 10px;<br />
+    display: block;<br />
+}<br />
+.allergen-card.is-hidden {<br />
+    display: none;<br />
+}<br />
+/* Responsive fallbacks */<br />
+@media (max-width: 991px) {<br />
+    .allergen-card { flex: 0 0 33.3333%; max-width: 33.3333%; } /* 3 per row on tablets */<br />
+}<br />
+@media (max-width: 767px) {<br />
+    .allergen-card { flex: 0 0 50%; max-width: 50%; } /* 2 per row on mobile */<br />
+}<br />
+@media (max-width: 479px) {<br />
+    .allergen-card { flex: 0 0 100%; max-width: 100%; } /* 1 per row on small phones */<br />
+}<br />
+</style>
+<div class="allergen-filter-bar"><button class="allergen-filter-btn active" type="button" data-filter="all">All</button>
+<button class="allergen-filter-btn" type="button" data-filter="btn1">Peanut, Sesame, Tree Nut</button>
+<button class="allergen-filter-btn" type="button" data-filter="btn2">Dairy, Egg, Soy</button>
+<button class="allergen-filter-btn" type="button" data-filter="btn3">Wheat, Rye, Barely, Oat</button>
+<button class="allergen-filter-btn" type="button" data-filter="btn4">Grain, Gluten</button>
+<button class="allergen-filter-btn" type="button" data-filter="btn5">Seafood</button>
+<button class="allergen-filter-btn" type="button" data-filter="btn6">Lupin, Mustard, Celery</button>
+<button class="allergen-filter-btn" type="button" data-filter="btn7">Environmental</button>
+<button class="allergen-filter-btn" type="button" data-filter="btn8">Plant-based drink</button></div>
+<div class="allergen-grid">
+<div style="border: 1px solid #cccccc; padding: 10px; text-align: center;"><img style="width: 100%; height: auto; display: block; margin: 0 auto;" src="https://elisasystems.com/wp-content/uploads/2026/08/allergen-Almonds.png" alt="Almonds" />Almonds
+
+</div>
+&nbsp;
+<div style="border: 1px solid #cccccc; padding: 10px; text-align: center;"><img style="width: 100%; height: auto; display: block; margin: 0 auto;" src="https://elisasystems.com/wp-content/uploads/2026/08/allergen-Beta-Lactoglobulin.png" alt="Beta Lactoglobulin" />Beta Lactoglobulin
+
+</div>
+&nbsp;
+<div style="border: 1px solid #cccccc; padding: 10px; text-align: center;"><img style="width: 100%; height: auto; display: block; margin: 0 auto;" src="https://elisasystems.com/wp-content/uploads/2026/08/allergen-Casein.png" alt="Casein" />Casein
+
+</div>
+&nbsp;
+<div style="border: 1px solid #cccccc; padding: 10px; text-align: center;"><img style="width: 100%; height: auto; display: block; margin: 0 auto;" src="https://elisasystems.com/wp-content/uploads/2026/08/allergen-Crustacean.png" alt="Crustacean" />Crustacean
+
+</div>
+&nbsp;
+<div style="border: 1px solid #cccccc; padding: 10px; text-align: center;"><img style="width: 100%; height: auto; display: block; margin: 0 auto;" src="https://elisasystems.com/wp-content/uploads/2026/08/allergen-Generation-3-Gluten.png" alt="Gluten" />Generation 3 Gluten
+
+</div>
+&nbsp;
+<div style="border: 1px solid #cccccc; padding: 10px; text-align: center;"><img style="width: 100%; height: auto; display: block; margin: 0 auto;" src="https://elisasystems.com/wp-content/uploads/2026/08/allergen-Hazelnut.png" alt="Hazelnut" />Hazelnut
+
+</div>
+&nbsp;
+<div style="border: 1px solid #cccccc; padding: 10px; text-align: center;"><img style="width: 100%; height: auto; display: block; margin: 0 auto;" src="https://elisasystems.com/wp-content/uploads/2026/08/allergen-Lupin.png" alt="Lupin" />Lupin
+
+</div>
+&nbsp;
+<div style="border: 1px solid #cccccc; padding: 10px; text-align: center;"><img style="width: 100%; height: auto; display: block; margin: 0 auto;" src="https://elisasystems.com/wp-content/uploads/2026/08/allergen-Mustard.png" alt="Mustard" />Mustard
+
+</div>
+&nbsp;
+<div style="border: 1px solid #cccccc; padding: 10px; text-align: center;"><img style="width: 100%; height: auto; display: block; margin: 0 auto;" src="https://elisasystems.com/wp-content/uploads/2026/08/allergen-Oat.png" alt="Oats" />Oats
+
+</div>
+&nbsp;
+<div style="border: 1px solid #cccccc; padding: 10px; text-align: center;"><img style="width: 100%; height: auto; display: block; margin: 0 auto;" src="https://elisasystems.com/wp-content/uploads/2026/08/allergen-Peanut.png" alt="Peanut" />Peanut
+
+</div>
+&nbsp;
+<div style="border: 1px solid #cccccc; padding: 10px; text-align: center;"><img style="width: 100%; height: auto; display: block; margin: 0 auto;" src="https://elisasystems.com/wp-content/uploads/2026/08/allergen-Processed-Egg.png" alt="Processed Egg" />Processed Egg
+
+</div>
+&nbsp;
+<div style="border: 1px solid #cccccc; padding: 10px; text-align: center;"><img style="width: 100%; height: auto; display: block; margin: 0 auto;" src="https://elisasystems.com/wp-content/uploads/2026/08/allergen-Sesame.png" alt="Sesame" />Sesame
+
+</div>
+&nbsp;
+<div style="border: 1px solid #cccccc; padding: 10px; text-align: center;"><img style="width: 100%; height: auto; display: block; margin: 0 auto;" src="https://elisasystems.com/wp-content/uploads/2026/08/allergen-Soy-Drink-Residue.png" alt="Soy Drink Residue" />Soy Drink Residue
+
+</div>
+&nbsp;
+<div style="border: 1px solid #cccccc; padding: 10px; text-align: center;"><img style="width: 100%; height: auto; display: block; margin: 0 auto;" src="https://elisasystems.com/wp-content/uploads/2026/08/allergen-Soy.png" alt="Soy" />Soy
+
+</div>
+&nbsp;
+<div style="border: 1px solid #cccccc; padding: 10px; text-align: center;"><img style="width: 100%; height: auto; display: block; margin: 0 auto;" src="https://elisasystems.com/wp-content/uploads/2026/08/allergen-Total-Milk.png" alt="Total Milk" />Total Milk
+
+</div>
+&nbsp;
+
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var buttons = document.querySelectorAll('.allergen-filter-btn');
+    var cards = document.querySelectorAll('.allergen-card');
+    buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            buttons.forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            var filter = btn.getAttribute('data-filter');
+            cards.forEach(function (card) {
+                if (filter === 'all') {
+                    card.classList.remove('is-hidden');
+                    return;
+                }
+                var cats = (card.getAttribute('data-category') || '').split(' ');
+                if (cats.indexOf(filter) !== -1) {
+                    card.classList.remove('is-hidden');
+                } else {
+                    card.classList.add('is-hidden');
+                }
+            });
+        });
+    });
+});
+</script>
+[/vc_column_text][/vc_column][/vc_row]
+
+[vc_row row_type="row" type="grid" text_align="left" css_animation="" margin_bottom="66"][vc_column padding_top="67"][/vc_column][/vc_row]
+
+[vc_row row_type="row" type="grid" anchor="services" text_align="left" padding_top="50" padding_bottom="50" css_animation=""][vc_column width="1/2"][icon_text box_type="normal" icon="fa-cog" icon_type="normal" icon_size="fa-2x" custom_icon_size="24" icon_position="left_from_title" title="Elisa Kits" title_tag="h2" text="High quality kits that can be used for both quantitative and/or qualitative analysis of food and environmental surfaces. " icon_color="#333333"][vc_empty_space height="10px"][button size="small" icon="fa-arrow-circle-right" icon_size="fa-lg" target="_self" font_weight="600" text="View More" link="https://elisasystems.com/product-category/elisa_kits/" icon_color="#ffffff" color="#ffffff"][/vc_column][vc_column width="1/2"][icon_text box_type="normal" icon="fa-phone" icon_type="normal" icon_size="fa-2x" custom_icon_size="24" icon_position="left_from_title" title="Contact Us" title_tag="h2" text="Have a question or technical query? Please contact us with your questions and we will answer your enquiry as quickly as possible." icon_color="#333333"][vc_empty_space height="10px"][button size="small" icon="fa-arrow-circle-right" icon_size="fa-lg" target="_self" font_weight="600" text="Contact Now" link="https://elisasystems.com/?page_id=1452" icon_color="#ffffff" color="#ffffff"][/vc_column][/vc_row]
+
+[vc_row row_type="row" type="grid" anchor="products" text_align="left" background_color="#f8fafc" border_color="#f8fafc" padding_top="50" padding_bottom="50" css_animation=""][vc_column][vc_column_text]
+<h2 style="text-align: left;">Latest News</h2>
+[/vc_column_text][vc_separator type="transparent" up="0" down="0"][vc_column_text]
+<h5 style="text-align: left;"><span style="color: #777777;">Want to receive regular updates signup to our e-news below.</span></h5>
+[/vc_column_text][vc_empty_space][latest_post type="boxes" number_of_colums="3" order_by="date" order="DESC" display_category="1" display_time="0" display_comments="1" display_like="1" display_share="1" text_length="150"][/vc_column][/vc_row]
