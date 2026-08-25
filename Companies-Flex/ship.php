@@ -11,7 +11,6 @@ function hq_shop_shipping_disclaimer() {
     }
 }
 
-
 <!--  -->
 
 // Create the shortcode [warehouse_shipping_info]
@@ -24,7 +23,6 @@ function display_warehouse_shipping_info_shortcode() {
     
     // Replace these slugs with your actual "USA Warehouse" category slugs
     $usa_categories = array( 'reagents-and-standards', 'vials-and-bottles' );
-
     if ( has_term( $usa_categories, 'product_cat', $product->get_id() ) ) {
         return '<div class="warehouse-shipping" style="color: #27ae60; font-weight: bold; margin-bottom: 15px;">✈️ Ships from USA warehouse</div>';
     } else {
