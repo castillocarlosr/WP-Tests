@@ -1,0 +1,42 @@
+.elementor-element-2dcf366 .elementor-widget-image .elementor-widget-container,
+.elementor-element-d838e1b .elementor-widget-image .elementor-widget-container,
+.elementor-element-6e6caab .elementor-widget-image .elementor-widget-container,
+.elementor-element-9fab570 .elementor-widget-image .elementor-widget-container,
+.elementor-element-57d98d2 .elementor-widget-image .elementor-widget-container,
+.elementor-element-d11bfaf .elementor-widget-image .elementor-widget-container,
+.elementor-element-df0a686 .elementor-widget-image .elementor-widget-container,
+.elementor-element-0e3b704 .elementor-widget-image .elementor-widget-container,
+.elementor-element-ad0e5cb .elementor-widget-image .elementor-widget-container,
+.elementor-element-021cf54 .elementor-widget-image .elementor-widget-container,
+.elementor-element-a930fda .elementor-widget-image .elementor-widget-container,
+.elementor-element-e38589d .elementor-widget-image .elementor-widget-container,
+.elementor-element-9b0a370 .elementor-widget-image .elementor-widget-container,
+.elementor-element-27d2416 .elementor-widget-image .elementor-widget-container,
+.elementor-element-194a5fd .elementor-widget-image .elementor-widget-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 150px;
+}
+
+.elementor-element-2dcf366 .elementor-widget-image img,
+.elementor-element-d838e1b .elementor-widget-image img,
+.elementor-element-6e6caab .elementor-widget-image img,
+.elementor-element-9fab570 .elementor-widget-image img,
+.elementor-element-57d98d2 .elementor-widget-image img,
+.elementor-element-d11bfaf .elementor-widget-image img,
+.elementor-element-df0a686 .elementor-widget-image img,
+.elementor-element-0e3b704 .elementor-widget-image img,
+.elementor-element-ad0e5cb .elementor-widget-image img,
+.elementor-element-021cf54 .elementor-widget-image img,
+.elementor-element-a930fda .elementor-widget-image img,
+.elementor-element-e38589d .elementor-widget-image img,
+.elementor-element-9b0a370 .elementor-widget-image img,
+.elementor-element-27d2416 .elementor-widget-image img,
+.elementor-element-194a5fd .elementor-widget-image img {
+  max-height: 150px;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
