@@ -1,0 +1,86 @@
+[vc_row row_type="row" type="full_width" text_align="left" css_animation=""][vc_column][vc_column_text]
+<style>
+.lf-tab-nav{display:flex;flex-wrap:wrap;border-bottom:1px solid #e2e8f0;margin-bottom:0;}
+.lf-tab-btn{background:#ffffff;border:1px solid #e2e8f0;border-bottom:none;padding:12px 24px;font-family:inherit;font-size:13px;font-weight:600;color:#64748b;cursor:pointer;margin:0 4px -1px 0;transition:color .15s ease;}
+.lf-tab-btn:hover{color:#0f172a;}
+.lf-tab-btn.active{color:#0f172a;border-bottom:2px solid #0f172a;}
+.lf-tab-panel{display:none;padding-top:20px;}
+.lf-tab-panel.active{display:block;}
+.lf-lateral-btn{display:inline-block;background:#0f172a;color:#ffffff !important;padding:10px 22px;border-radius:3px;text-decoration:none;font-weight:600;font-size:14px;margin-top:10px;}
+.lf-lateral-btn:hover{background:#1e293b;color:#ffffff !important;}
+.woocommerce-tabs > ul.tabs-nav{display:none !important;}
+.woocommerce-tabs .panel{border-top:1px solid #e2e8f0 !important;}
+</style>
+<div class="lf-tab-nav">
+    <button type="button" class="lf-tab-btn active" data-tab="lf-panel-1">ELISA Systems Test Kits</button>
+    <button type="button" class="lf-tab-btn" data-tab="lf-panel-2">Lateral Flow</button>
+</div>
+<div class="lf-tab-panel active" id="lf-panel-1">
+
+<strong>Almond</strong>
+
+ESARD-48
+
+&nbsp;
+
+A specific almond protein was identified from high temperature treatments to be very heat stable and is used as the Almond protein indicator for the ELISA SYSTEMS Almond Residue ELISA. Food manufacturers protect those with food allergies by clearly labelling their products with a list of ingredients. Testing for the presence of components ensures food manufacturers that an unlabeled and potentially dangerous ingredient did not make its way unintentionally into a product during manufacture.
+
+&nbsp;
+<h3>Intended Use</h3>
+&nbsp;
+
+The ELISA SYSTEMS Almond Residue assay is an enzyme-linked immunosorbent assay (ELISA) that may be used to screen food products for the presence of almond material caused by cross-contamination with almond products and residues. This assay is a rapid and reliable test that significantly reduces the time required to screen food products and environmental samples for the presence of almond residues.
+
+&nbsp;
+<h3><strong>Kit Controls Supplied</strong></h3>
+0.0ppm,&nbsp; 0.5ppm, 1.0ppm, 2.5ppm and 5.0 ppm Almond Protein<br />
+Time for testing an extracted sample is approximately 30 minutes
+</div>
+<div class="lf-tab-panel" id="lf-panel-2">
+<h3>Almond: Lateral Flow Device</h3>
+<ul>
+<li>Coming soon.  Look for updates.</li>
+<li>Rapid detection of Almond protein</li>
+<li>10 tests for Almond for foods, rinse water and surfaces</li>
+<li>Limit of Detection (LOD): 1ppm</li>
+<li>Cross-Reactivity: kidney bean, poppy seed</li>
+</ul>
+<p>The <strong>OnSite<sup>&#174;</sup> III Allergen test kits</strong> are designed for maximum efficiency and safety. Useful for validation of any Allergen Control Program, as well as daily monitoring. Test incoming ingredients, first products off the line, rinse water, or finished goods &mdash; plus test working surfaces with the addition of the OnSite&#174; III Allergen Accessory Kit</p>
+<p>Testing for multiple allergens at once? A single swab or extracted sample can be used to test 5+ different allergens. This saves time and money, reduces waste, and ensures consistent sampling across allergens.</p>
+<p>With a simple procedure and no equipment required, the kits can be used anywhere that food is made. The test should only be performed by trained personnel.</p>
+<p>OnSite<sup>&#174;</sup> III Allergen test kits at a glance:</p>
+<ul>
+<li>Test works on products, surfaces and rinse water</li>
+<li>Equipment Required: None for food testing, <a href="https://emportllc.com/product/onsite-iii-allergen-accessory-kit/">swabs</a> required for surface testing</li>
+<li>Qualitative 3-line Results</li>
+<li>Time to Results: 20 minutes</li>
+<li>Storage/Shelf Life: Store in original packaging at 2-25&#176;C (36-77&#176;F). Do not freeze. If using refrigerated storage, allow kit contents to come to room temperature before running tests.</li>
+<li>Available for 15+ Allergens</li>
+<li>Surface Testing requires the OnSite&#174; III Allergen Accessory Kit.</li>
+<li>Test for multiple allergens from a single sample extraction</li>
+</ul>
+<p><strong>Kit Contents:</strong> OnSite<sup>&#174;</sup> LFD Devices (x10), Single-Use Dropper (x10), Single-Use Sampling Spoons (x10), OnSite&#174; LFD Extraction Buffer A, Extraction Tubes (x10), Instructions for Use</p>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.lf-tab-nav').forEach(function (nav) {
+        var container = nav.parentElement;
+        var buttons = nav.querySelectorAll('.lf-tab-btn');
+        buttons.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                buttons.forEach(function (b) { b.classList.remove('active'); });
+                btn.classList.add('active');
+                var targetTab = btn.getAttribute('data-tab');
+                container.querySelectorAll('.lf-tab-panel').forEach(function (panel) {
+                    panel.classList.toggle('active', panel.id === targetTab);
+                });
+                var quoteBtn = document.querySelector('.relocated-tab-button-container');
+                if (quoteBtn) {
+                    quoteBtn.style.display = (targetTab === 'lf-panel-2') ? 'none' : '';
+                }
+            });
+        });
+    });
+});
+</script>
+[/vc_column_text][/vc_column][/vc_row]
